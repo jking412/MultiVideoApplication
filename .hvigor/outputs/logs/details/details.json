@@ -1,0 +1,175 @@
+{
+  "HVIGOR_OHOS_PLUGIN": {
+    "MODULE_CONFIG": [
+      {
+        "MODULE_NAME": "phone",
+        "API_TYPE": "stageMode",
+        "TARGETS": [
+          {
+            "name": "default"
+          }
+        ],
+        "DEVICE_TYPES": [
+          "phone",
+          "tablet",
+          "2in1"
+        ],
+        "AOT_COMPILE_MODE": "type"
+      },
+      {
+        "MODULE_NAME": "home",
+        "API_TYPE": "stageMode",
+        "TARGETS": [
+          {
+            "name": "default"
+          }
+        ],
+        "DEVICE_TYPES": [
+          "phone",
+          "tablet",
+          "2in1"
+        ],
+        "AOT_COMPILE_MODE": "type"
+      },
+      {
+        "MODULE_NAME": "search",
+        "API_TYPE": "stageMode",
+        "TARGETS": [
+          {
+            "name": "default"
+          }
+        ],
+        "DEVICE_TYPES": [
+          "phone",
+          "tablet",
+          "2in1"
+        ],
+        "AOT_COMPILE_MODE": "type"
+      },
+      {
+        "MODULE_NAME": "videoDetail",
+        "API_TYPE": "stageMode",
+        "TARGETS": [
+          {
+            "name": "default"
+          }
+        ],
+        "DEVICE_TYPES": [
+          "phone",
+          "tablet",
+          "2in1"
+        ],
+        "AOT_COMPILE_MODE": "type"
+      },
+      {
+        "MODULE_NAME": "videoPlayer",
+        "API_TYPE": "stageMode",
+        "TARGETS": [
+          {
+            "name": "default"
+          }
+        ],
+        "DEVICE_TYPES": [
+          "phone",
+          "tablet",
+          "2in1"
+        ],
+        "AOT_COMPILE_MODE": "type"
+      },
+      {
+        "MODULE_NAME": "base",
+        "API_TYPE": "stageMode",
+        "TARGETS": [
+          {
+            "name": "default"
+          }
+        ],
+        "DEVICE_TYPES": [
+          "phone",
+          "tablet",
+          "2in1"
+        ],
+        "AOT_COMPILE_MODE": "type"
+      }
+    ],
+    "PROJECT_CONFIG": {
+      "PRODUCTS": [
+        {
+          "NAME": "default",
+          "COMPATIBLE_SDK_VERSION": "5.0.0(12)",
+          "RUNTIMEOS": "HarmonyOS"
+        }
+      ],
+      "BUILD_MODE_SET": [
+        {
+          "NAME": "debug"
+        },
+        {
+          "NAME": "release"
+        }
+      ],
+      "MODULES": [
+        {
+          "TARGETS": [
+            {
+              "NAME": "default"
+            }
+          ]
+        },
+        {
+          "TARGETS": [
+            {
+              "NAME": "default"
+            }
+          ]
+        },
+        {
+          "TARGETS": [
+            {
+              "NAME": "default"
+            }
+          ]
+        },
+        {
+          "TARGETS": [
+            {
+              "NAME": "default"
+            }
+          ]
+        },
+        {
+          "TARGETS": [
+            {
+              "NAME": "default"
+            }
+          ]
+        },
+        {
+          "TARGETS": [
+            {
+              "NAME": "default"
+            }
+          ]
+        }
+      ],
+      "BUILD_MODE": "debug"
+    }
+  },
+  "totalTime": 9215964700,
+  "moduleNum": 1,
+  "taskTime": {
+    "compileArkTS": 0,
+    "buildArkTS": 0,
+    "compileJS": 0,
+    "buildJS": 0,
+    "compileResource": 536410600,
+    "packageHap": 0,
+    "signHap": 0
+  },
+  "isIncremental": true,
+  "hasIncremental": true,
+  "isParallel": true,
+  "IS_DAEMON": true,
+  "LOG_LEVEL": "INFO",
+  "IS_HVIGORFILE_TYPE_CHECK": false
+}

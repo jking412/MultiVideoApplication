@@ -1,0 +1,22 @@
+{
+  "modulePathMap": {
+    "phone": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone",
+    "home": "D:\\code\\harmony\\MultiVideoApplication\\features\\home",
+    "search": "D:\\code\\harmony\\MultiVideoApplication\\features\\search",
+    "videoDetail": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail",
+    "videoPlayer": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer",
+    "base": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "D:\\code\\harmony\\MultiVideoApplication",
+  "nodeModulesPath": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\.preview\\default\\intermediates\\loader_out\\default\\node_modules",
+  "moduleName": "phone",
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "anBuildOutPut": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\.preview\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildMode": "type"
+}

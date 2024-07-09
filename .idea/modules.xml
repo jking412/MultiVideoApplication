@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MultiVideoApplication.iml" filepath="$PROJECT_DIR$/.idea/modules/MultiVideoApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/base/base.iml" filepath="$PROJECT_DIR$/.idea/modules/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/home/home.iml" filepath="$PROJECT_DIR$/.idea/modules/home/home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/phone/phone.iml" filepath="$PROJECT_DIR$/.idea/modules/phone/phone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/search/search.iml" filepath="$PROJECT_DIR$/.idea/modules/search/search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/videoDetail/videoDetail.iml" filepath="$PROJECT_DIR$/.idea/modules/videoDetail/videoDetail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/videoPlayer/videoPlayer.iml" filepath="$PROJECT_DIR$/.idea/modules/videoPlayer/videoPlayer.iml" />
+    </modules>
+  </component>
+</project>

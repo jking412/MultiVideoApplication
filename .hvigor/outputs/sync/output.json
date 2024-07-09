@@ -1,0 +1,442 @@
+{
+  "ohos-module-phone": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build\\default\\cache\\default\\default@CompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    }
+  },
+  "ohos-module-home": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build\\default\\cache\\default\\default@CompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\code\\harmony\\MultiVideoApplication\\features\\home\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    }
+  },
+  "ohos-module-search": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build\\default\\cache\\default\\default@CompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\code\\harmony\\MultiVideoApplication\\features\\search\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    }
+  },
+  "ohos-module-videoDetail": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build\\default\\cache\\default\\default@CompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    }
+  },
+  "ohos-module-videoPlayer": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build\\default\\cache\\default\\default@CompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    }
+  },
+  "ohos-module-base": {
+    "SELECT_TARGET": "default",
+    "MODULE_BUILD_DIR": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build",
+    "TARGETS": {
+      "default": {
+        "SOURCE_ROOT": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\src\\main",
+        "RESOURCES_PATH": [
+          "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\src\\main\\resources"
+        ],
+        "BUILD_PATH": {
+          "OUTPUT_PATH": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build\\default\\outputs\\default",
+          "INTERMEDIA_PATH": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build\\default\\intermediates",
+          "JS_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build\\default\\intermediates\\loader_out\\default",
+          "JS_LITE_ASSETS_PATH": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build\\default\\intermediates\\loader_out_lite\\default",
+          "RES_PATH": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build\\default\\intermediates\\res\\default",
+          "RES_PROFILE_PATH": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build\\default\\intermediates\\res\\default\\resources\\base\\profile",
+          "ETS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build\\default\\cache\\default\\default@CompileArkTS\\esmodule",
+          "JS_SUPER_VISUAL_PATH": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build\\default\\cache\\default\\default@CompileJS\\jsbundle",
+          "WORKER_LOADER": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build\\default\\intermediates\\loader\\default\\loader.json",
+          "MANIFEST_JSON": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build\\default\\intermediates\\manifest\\default",
+          "OUTPUT_METADATA_JSON": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base\\build\\default\\intermediates\\hap_metadata\\default\\output_metadata.json"
+        },
+        "BUILD_OPTION": {
+          "debuggable": true
+        }
+      }
+    },
+    "BUILD_OPTION": {
+      "default-default": {
+        "debuggable": true,
+        "copyFrom": "default"
+      }
+    },
+    "BUILD_PROFILE_OPT": {
+      "apiType": "stageMode",
+      "buildOption": {},
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    }
+  },
+  "ohos-project": {
+    "SELECT_PRODUCT_NAME": "default",
+    "MODULE_BUILD_DIR": "D:\\code\\harmony\\MultiVideoApplication\\build",
+    "BUNDLE_NAME": "com.huawei.videoapplication",
+    "BUILD_PATH": {
+      "OUTPUT_PATH": "D:\\code\\harmony\\MultiVideoApplication\\build\\outputs\\default"
+    },
+    "MODULES": [
+      {
+        "name": "phone",
+        "srcPath": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "home",
+        "srcPath": "D:\\code\\harmony\\MultiVideoApplication\\features\\home",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "search",
+        "srcPath": "D:\\code\\harmony\\MultiVideoApplication\\features\\search",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "videoDetail",
+        "srcPath": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "videoPlayer",
+        "srcPath": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "base",
+        "srcPath": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base",
+        "targets": [
+          {
+            "name": "default",
+            "applyToProducts": [
+              "default"
+            ]
+          }
+        ]
+      }
+    ],
+    "PROFILE_OPT": {
+      "app": {
+        "signingConfigs": [],
+        "products": [
+          {
+            "name": "default",
+            "signingConfig": "default",
+            "compatibleSdkVersion": "5.0.0(12)",
+            "runtimeOS": "HarmonyOS"
+          }
+        ],
+        "buildModeSet": [
+          {
+            "name": "debug"
+          },
+          {
+            "name": "release"
+          }
+        ]
+      },
+      "modules": [
+        {
+          "name": "phone",
+          "srcPath": "./products/phone",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "home",
+          "srcPath": "./features/home",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "search",
+          "srcPath": "./features/search",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "videoDetail",
+          "srcPath": "./features/videoDetail",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "videoPlayer",
+          "srcPath": "./features/videoPlayer",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "base",
+          "srcPath": "./commons/base",
+          "targets": [
+            {
+              "name": "default",
+              "applyToProducts": [
+                "default"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "CONFIG_PROPERTIES": {
+      "enableSignTask": true,
+      "skipNativeIncremental": false
+    }
+  },
+  "version": 1
+}

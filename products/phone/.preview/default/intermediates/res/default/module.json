@@ -1,0 +1,57 @@
+{
+	"app":	{
+		"bundleName":	"com.huawei.videoapplication",
+		"vendor":	"example",
+		"versionCode":	1000000,
+		"versionName":	"1.0.0",
+		"icon":	"$media:app_icon",
+		"label":	"$string:app_name",
+		"apiReleaseType":	"Beta1",
+		"compileSdkVersion":	"5.0.0.25",
+		"targetAPIVersion":	50000012,
+		"minAPIVersion":	50000012,
+		"compileSdkType":	"HarmonyOS",
+		"appEnvironments":	[],
+		"bundleType":	"app",
+		"debug":	true,
+		"iconId":	50331648,
+		"labelId":	50331649
+	},
+	"module":	{
+		"name":	"phone",
+		"type":	"entry",
+		"description":	"$string:module_desc",
+		"mainElement":	"EntryAbility",
+		"deviceTypes":	["phone", "tablet", "2in1"],
+		"deliveryWithInstall":	true,
+		"installationFree":	false,
+		"pages":	"$profile:main_pages",
+		"abilities":	[{
+				"name":	"EntryAbility",
+				"srcEntry":	"./ets/entryability/EntryAbility.ets",
+				"description":	"$string:EntryAbility_desc",
+				"icon":	"$media:icon",
+				"label":	"$string:EntryAbility_label",
+				"startWindowIcon":	"$media:icon",
+				"startWindowBackground":	"$color:start_window_background",
+				"exported":	true,
+				"minWindowWidth":	331,
+				"minWindowHeight":	600,
+				"skills":	[{
+						"entities":	["entity.system.home"],
+						"actions":	["action.system.home"]
+					}],
+				"launchType":	"singleton",
+				"descriptionId":	50331650,
+				"iconId":	50331655,
+				"labelId":	50331651,
+				"startWindowIconId":	50331655,
+				"startWindowBackgroundId":	50331654
+			}],
+		"packageName":	"phone",
+		"virtualMachine":	"ark12.0.2.0",
+		"compileMode":	"esmodule",
+		"dependencies":	[],
+		"descriptionId":	50331652
+	}
+}
