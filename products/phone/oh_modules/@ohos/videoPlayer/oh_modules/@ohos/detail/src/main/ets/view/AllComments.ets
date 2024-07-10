@@ -18,12 +18,13 @@ import { BreakpointType } from '@ohos/commons';
 import { DetailConstants } from '../constants/DetailConstants';
 import { UserInfo, UserViewModel } from '../viewmodel/UserViewModel';
 
+
 @Component
 export struct AllComments {
   @StorageLink('currentBreakpoint') currentBreakpoint: string = BreakpointConstants.BREAKPOINT_LG;
   @Link commentImgHeight: string;
   @Link commentImgWidth: string;
-  private commentsList: UserInfo[] = new UserViewModel().getRelatedVideoList();
+  @Consume commentsList:UserInfo[];
 
   build() {
     Column() {
@@ -89,11 +90,11 @@ export struct AllComments {
 
             Blank()
 
-            IconImage({ image: $r('app.media.ic_public_comments') })
+            IconImage({ image: $r('app.media.ic_public_comments'), icon: $r('app.media.ic_public_comments') })
               .margin({ right: $r('app.float.all_comments_icon_margin') })
-            IconImage({ image: $r("app.media.ic_public_thumb_sup") })
+            IconImage({ image: $r("app.media.ic_public_thumb_sup"),change: $r('app.media.ic_public_thumb_sup_red'), icon: $r("app.media.ic_public_thumb_sup") })
               .margin({ right: $r('app.float.all_comments_icon_margin') })
-            IconImage({ image: $r('app.media.ic_public_share') })
+            IconImage({ image: $r('app.media.ic_public_share'), icon: $r('app.media.ic_public_share') })
           }
           .margin({ top: $r('app.float.all_comments_icon_row_top') })
           .width(CommonConstants.FULL_PERCENT)
@@ -133,11 +134,21 @@ export struct AllComments {
 
 @Component
 struct IconImage {
-  private image: Resource | null = null;
+  @State private image: Resource | null = null;
+  @State private change: Resource | null = null;
+  @State private icon: Resource | null = null;
 
   build() {
-    Image(this.image)
+    Image(this.icon)
       .height($r('app.float.all_comments_icon_size'))
       .width($r('app.float.all_comments_icon_size'))
+      .onClick(() => {
+        if(this.icon == this.image){
+          this.icon = this.change
+        }
+        else {
+          this.icon = this.image
+        }
+      })
   }
 }

@@ -1,15 +1,15 @@
 {
   "modulePathMap": {
-    "phone": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone",
-    "home": "D:\\code\\harmony\\MultiVideoApplication\\features\\home",
-    "search": "D:\\code\\harmony\\MultiVideoApplication\\features\\search",
-    "videoDetail": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoDetail",
-    "videoPlayer": "D:\\code\\harmony\\MultiVideoApplication\\features\\videoPlayer",
-    "base": "D:\\code\\harmony\\MultiVideoApplication\\commons\\base"
+    "phone": "C:\\Users\\admin\\Desktop\\MultiVideoApplication\\products\\phone",
+    "home": "C:\\Users\\admin\\Desktop\\MultiVideoApplication\\features\\home",
+    "search": "C:\\Users\\admin\\Desktop\\MultiVideoApplication\\features\\search",
+    "videoDetail": "C:\\Users\\admin\\Desktop\\MultiVideoApplication\\features\\videoDetail",
+    "videoPlayer": "C:\\Users\\admin\\Desktop\\MultiVideoApplication\\features\\videoPlayer",
+    "base": "C:\\Users\\admin\\Desktop\\MultiVideoApplication\\commons\\base"
   },
   "compileMode": "esmodule",
-  "projectRootPath": "D:\\code\\harmony\\MultiVideoApplication",
-  "nodeModulesPath": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\.preview\\default\\intermediates\\loader_out\\default\\node_modules",
+  "projectRootPath": "C:\\Users\\admin\\Desktop\\MultiVideoApplication",
+  "nodeModulesPath": "C:\\Users\\admin\\Desktop\\MultiVideoApplication\\products\\phone\\.preview\\default\\intermediates\\loader_out\\default\\node_modules",
   "moduleName": "phone",
   "harNameOhmMap": {},
   "packageManagerType": "ohpm",
@@ -17,6 +17,6 @@
   "dynamicImportLibInfo": {},
   "routerMap": [],
   "hspResourcesMap": {},
-  "anBuildOutPut": "D:\\code\\harmony\\MultiVideoApplication\\products\\phone\\.preview\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
+  "anBuildOutPut": "C:\\Users\\admin\\Desktop\\MultiVideoApplication\\products\\phone\\.preview\\default\\intermediates\\loader_out\\default\\an\\arm64-v8a",
   "anBuildMode": "type"
 }

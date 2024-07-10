@@ -3,7 +3,7 @@
 		"BUNDLE_NAME":"com.huawei.videoapplication",
 		"SELECT_BUILD_MODE":"",
 		"BUILD_PATH":{
-			"OUTPUT_PATH":"D:\\code\\harmony\\MultiVideoApplication\\build\\outputs\\default"
+			"OUTPUT_PATH":"C:\\Users\\admin\\Desktop\\MultiVideoApplication\\build\\outputs\\default"
 		},
 		"SELECT_BUILD_PRODUCT":"default"
 	},

@@ -20,6 +20,7 @@ import { SelfComment } from './SelfComment';
 import { AllComments } from './AllComments';
 import { VideoDetailView } from './VideoDetailView';
 import { DetailConstants } from '../constants/DetailConstants';
+import { UserInfo, UserViewModel } from '../viewmodel/UserViewModel';
 
 @Component
 export struct VideoDetail {
@@ -33,6 +34,7 @@ export struct VideoDetail {
   @State relatedVideoHeight: number = DetailConstants.INITIAL_RELATED_VIDEO_HEIGHT;
   @State videoHeight: number = DetailConstants.INITIAL_VIDEO_HEIGHT;
   @State screenWidth: number = DeviceScreen.getDeviceWidth();
+  @Provide commentsList: UserInfo[] = new UserViewModel().getRelatedVideoList();
   private avPlayerUtil: AvPlayerUtil= new AvPlayerUtil();
   private screenHeight: number = 0;
   private windowUtil?: WindowUtil;

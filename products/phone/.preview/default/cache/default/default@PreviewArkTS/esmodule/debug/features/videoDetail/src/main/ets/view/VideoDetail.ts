@@ -12,6 +12,7 @@ interface VideoDetail_Params {
     relatedVideoHeight?: number;
     videoHeight?: number;
     screenWidth?: number;
+    commentsList?: UserInfo[];
     avPlayerUtil?: AvPlayerUtil;
     screenHeight?: number;
     windowUtil?: WindowUtil;
@@ -25,6 +26,8 @@ import { SelfComment } from "@bundle:com.huawei.videoapplication/phone@videoDeta
 import { AllComments } from "@bundle:com.huawei.videoapplication/phone@videoDetail/ets/view/AllComments";
 import { VideoDetailView } from "@bundle:com.huawei.videoapplication/phone@videoDetail/ets/view/VideoDetailView";
 import { DetailConstants } from "@bundle:com.huawei.videoapplication/phone@videoDetail/ets/constants/DetailConstants";
+import { UserViewModel } from "@bundle:com.huawei.videoapplication/phone@videoDetail/ets/viewmodel/UserViewModel";
+import type { UserInfo } from "@bundle:com.huawei.videoapplication/phone@videoDetail/ets/viewmodel/UserViewModel";
 export class VideoDetail extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1, paramsLambda = undefined, extraInfo) {
         super(parent, __localStorage, elmtId, extraInfo);
@@ -41,6 +44,8 @@ export class VideoDetail extends ViewPU {
         this.__relatedVideoHeight = new ObservedPropertySimplePU(DetailConstants.INITIAL_RELATED_VIDEO_HEIGHT, this, "relatedVideoHeight");
         this.__videoHeight = new ObservedPropertySimplePU(DetailConstants.INITIAL_VIDEO_HEIGHT, this, "videoHeight");
         this.__screenWidth = new ObservedPropertySimplePU(DeviceScreen.getDeviceWidth(), this, "screenWidth");
+        this.__commentsList = new ObservedPropertyObjectPU(new UserViewModel().getRelatedVideoList(), this, "commentsList");
+        this.addProvidedVar("commentsList", this.__commentsList, false);
         this.avPlayerUtil = new AvPlayerUtil();
         this.screenHeight = 0;
         this.windowUtil = undefined;
@@ -86,6 +91,9 @@ export class VideoDetail extends ViewPU {
         if (params.screenWidth !== undefined) {
             this.screenWidth = params.screenWidth;
         }
+        if (params.commentsList !== undefined) {
+            this.commentsList = params.commentsList;
+        }
         if (params.avPlayerUtil !== undefined) {
             this.avPlayerUtil = params.avPlayerUtil;
         }
@@ -112,6 +120,7 @@ export class VideoDetail extends ViewPU {
         this.__relatedVideoHeight.purgeDependencyOnElmtId(rmElmtId);
         this.__videoHeight.purgeDependencyOnElmtId(rmElmtId);
         this.__screenWidth.purgeDependencyOnElmtId(rmElmtId);
+        this.__commentsList.purgeDependencyOnElmtId(rmElmtId);
     }
     aboutToBeDeleted() {
         this.__currentBreakpoint.aboutToBeDeleted();
@@ -124,6 +133,7 @@ export class VideoDetail extends ViewPU {
         this.__relatedVideoHeight.aboutToBeDeleted();
         this.__videoHeight.aboutToBeDeleted();
         this.__screenWidth.aboutToBeDeleted();
+        this.__commentsList.aboutToBeDeleted();
         SubscriberManager.Get().delete(this.id__());
         this.aboutToBeDeletedInternal();
     }
@@ -197,6 +207,13 @@ export class VideoDetail extends ViewPU {
     set screenWidth(newValue: number) {
         this.__screenWidth.set(newValue);
     }
+    private __commentsList: ObservedPropertyObjectPU<UserInfo[]>;
+    get commentsList() {
+        return this.__commentsList.get();
+    }
+    set commentsList(newValue: UserInfo[]) {
+        this.__commentsList.set(newValue);
+    }
     private avPlayerUtil: AvPlayerUtil;
     private screenHeight: number;
     private windowUtil?: WindowUtil;
@@ -233,7 +250,7 @@ export class VideoDetail extends ViewPU {
                             lg: BreakpointConstants.GRID_ROW_COLUMNS[0]
                         }
                     });
-                    GridRow.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(87:7)");
+                    GridRow.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(89:7)");
                     GridRow.width(CommonConstants.FULL_PERCENT);
                     GridRow.height(CommonConstants.FULL_PERCENT);
                     GridRow.onBreakpointChange((breakPoints) => {
@@ -257,12 +274,12 @@ export class VideoDetail extends ViewPU {
                             lg: BreakpointConstants.GRID_COLUMN_SPANS[0]
                         }
                     });
-                    GridCol.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(94:9)");
+                    GridCol.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(96:9)");
                     GridCol.height(CommonConstants.FULL_PERCENT);
                 }, GridCol);
                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                     SideBarContainer.create();
-                    SideBarContainer.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(101:11)");
+                    SideBarContainer.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(103:11)");
                     SideBarContainer.showSideBar(this.currentBreakpoint === BreakpointConstants.BREAKPOINT_LG ? true : false);
                     SideBarContainer.showControlButton(false);
                     SideBarContainer.autoHide(false);
@@ -273,7 +290,7 @@ export class VideoDetail extends ViewPU {
                 }, SideBarContainer);
                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                     Column.create();
-                    Column.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(102:13)");
+                    Column.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(104:13)");
                     Column.justifyContent(FlexAlign.Start);
                     Column.height(CommonConstants.FULL_PERCENT);
                     Column.width(CommonConstants.FULL_PERCENT);
@@ -295,7 +312,7 @@ export class VideoDetail extends ViewPU {
                 }, Column);
                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                     Scroll.create();
-                    Scroll.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(103:15)");
+                    Scroll.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(105:15)");
                     Scroll.align(Alignment.Top);
                     Scroll.scrollBar(BarState.Off);
                     Scroll.layoutWeight(1);
@@ -310,7 +327,7 @@ export class VideoDetail extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new AllComments(this, { commentImgHeight: this.__commentImgHeight, commentImgWidth: this.__commentImgWidth }, undefined, elmtId, () => { }, { page: "features/videoDetail/src/main/ets/view/VideoDetail.ets", line: 104 });
+                            let componentCall = new AllComments(this, { commentImgHeight: this.__commentImgHeight, commentImgWidth: this.__commentImgWidth }, undefined, elmtId, () => { }, { page: "features/videoDetail/src/main/ets/view/VideoDetail.ets", line: 106 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -335,7 +352,7 @@ export class VideoDetail extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new SelfComment(this, {}, undefined, elmtId, () => { }, { page: "features/videoDetail/src/main/ets/view/VideoDetail.ets", line: 114 });
+                            let componentCall = new SelfComment(this, {}, undefined, elmtId, () => { }, { page: "features/videoDetail/src/main/ets/view/VideoDetail.ets", line: 116 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {};
@@ -351,7 +368,7 @@ export class VideoDetail extends ViewPU {
                 Column.pop();
                 this.observeComponentCreation2((elmtId, isInitialRender) => {
                     Column.create();
-                    Column.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(137:13)");
+                    Column.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(139:13)");
                     Column.height(CommonConstants.FULL_PERCENT);
                     Column.width(CommonConstants.FULL_PERCENT);
                 }, Column);
@@ -367,7 +384,7 @@ export class VideoDetail extends ViewPU {
                                 avPlayerUtil: this.avPlayerUtil,
                                 relatedVideoHeight: this.__relatedVideoHeight,
                                 videoHeight: this.__videoHeight
-                            }, undefined, elmtId, () => { }, { page: "features/videoDetail/src/main/ets/view/VideoDetail.ets", line: 138 });
+                            }, undefined, elmtId, () => { }, { page: "features/videoDetail/src/main/ets/view/VideoDetail.ets", line: 140 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {
@@ -393,7 +410,7 @@ export class VideoDetail extends ViewPU {
                 {
                     this.observeComponentCreation2((elmtId, isInitialRender) => {
                         if (isInitialRender) {
-                            let componentCall = new SelfComment(this, {}, undefined, elmtId, () => { }, { page: "features/videoDetail/src/main/ets/view/VideoDetail.ets", line: 146 });
+                            let componentCall = new SelfComment(this, {}, undefined, elmtId, () => { }, { page: "features/videoDetail/src/main/ets/view/VideoDetail.ets", line: 148 });
                             ViewPU.create(componentCall);
                             let paramsLambda = () => {
                                 return {};
@@ -439,7 +456,7 @@ export class VideoDetail extends ViewPU {
                 this.avPlayerUtil.pause();
                 this.avPlayerUtil.offTimeUpdate();
             });
-            NavDestination.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(86:5)");
+            NavDestination.debugLine("features/videoDetail/src/main/ets/view/VideoDetail.ets(88:5)");
         }, NavDestination);
         NavDestination.pop();
     }

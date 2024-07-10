@@ -2559,5 +2559,9 @@
 			"type":	"media",
 			"name":	"search_video_7",
 			"id":	"0x0300027F"
+		}, {
+			"type":	"media",
+			"name":	"ic_public_thumb_sup_red",
+			"id":	"0x03000280"
 		}]
 }

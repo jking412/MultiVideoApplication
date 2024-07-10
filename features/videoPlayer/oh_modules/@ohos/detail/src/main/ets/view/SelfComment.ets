@@ -17,10 +17,13 @@ import { deviceInfo } from '@kit.BasicServicesKit';
 import { CommonConstants } from '@ohos/commons';
 import { DetailConstants } from '../constants/DetailConstants';
 import { UserInfo, UserViewModel } from '../viewmodel/UserViewModel';
+import { text } from '@kit.ArkGraphics2D';
 
 @Component
 export struct SelfComment {
   private selfInfo: UserInfo = new UserViewModel().getSelfInfo();
+  @Consume commentsList:UserInfo[];
+  @State message:string = ""
 
   build() {
     Row() {
@@ -55,7 +58,7 @@ export struct SelfComment {
             right: $r('app.float.self_comment_comment_right')
           })
 
-        TextInput({ placeholder: DetailConstants.COMMENT_PLACEHOLDER })
+        TextInput({text: $$this.message,placeholder: DetailConstants.COMMENT_PLACEHOLDER })
           .placeholderFont({
             size: $r('app.float.self_comment_input_font'),
             weight: FontWeight.Normal
@@ -67,6 +70,17 @@ export struct SelfComment {
             right: $r('app.float.self_comment_input_right')
           })
           .width(CommonConstants.FULL_PERCENT)
+          .onChange((value: string) =>{
+            this.message = value
+          })
+
+          .onKeyEvent((event ?: KeyEvent) =>{
+            if (event?.keyCode === 2054) {
+              this.commentsList.push(new UserInfo(DetailConstants.USER_INFO_NAMES[0], $r('app.media.user_profile_2'),
+                this.message, undefined, DetailConstants.USER_INFO_DATE));
+              this.message = ""
+              }
+            })
       }
       .alignSelf(ItemAlign.Center)
       .layoutWeight(1)

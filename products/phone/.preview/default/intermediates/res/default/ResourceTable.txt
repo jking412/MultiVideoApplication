@@ -545,6 +545,7 @@ media ic_public_search_white 0x030000a7
 media ic_public_share 0x03000012
 media ic_public_sift 0x03000214
 media ic_public_thumb_sup 0x0300001a
+media ic_public_thumb_sup_red 0x03000280
 media ic_public_view_list 0x030000cf
 media ic_public_view_list_white 0x030001cf
 media ic_tabs_home_normal 0x030000b6
